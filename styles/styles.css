@@ -4,10 +4,13 @@ main {
     margin: 0 auto;
 }
 
-/* Profile image inside main */
-main img {
+/* Image styling */
+img {
     width: 150px;
     height: auto;
+    border: 2px solid #333;
+    padding: 5px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 /* Paragraph padding reset */
@@ -23,12 +26,6 @@ aside {
     padding: 15px;
     background-color: #f0f8ff;
     color: #000;
-}
-
-/* Image inside aside */
-aside img {
-    width: 200px;
-    height: auto;
 }
 
 /* Footer styling */
