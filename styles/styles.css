@@ -1,56 +1,49 @@
-/* Main content styling */
-main {
-    max-width: 800px;
-    margin: 0 auto;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
 }
 
-/* Image styling */
-img {
-    width: 150px;
-    height: auto;
-    border: 2px solid #333;
-    padding: 5px;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+header {
+  background-color: #003366;
+  padding: 1rem;
+  text-align: center;
 }
 
-/* Paragraph padding reset */
-p {
-    padding: 0;
-}
-
-/* Aside section styling */
-aside {
-    max-width: 800px;
-    margin: 20px auto;
-    border: 2px solid #333;
-    padding: 15px;
-    background-color: #f0f8ff;
-    color: #000;
-}
-
-/* Footer styling */
-footer {
-    margin-top: 30px;
-    border-top: 2px solid #333;
-    text-align: center;
-    padding-top: 10px;
-}
-
-/* Navigation styling */
-nav {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    margin-bottom: 20px;
-    background-color: #e6f2ff; /* light background */
-    padding: 10px; /* spacing inside nav bar */
-}
-
-/* Navigation links */
 nav a {
-    color: #0077cc;
-    padding: 8px 15px;
-    display: block;
-    text-decoration: none;
-    font-weight: bold;
+  color: white;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.profile {
+  width: 150px;
+  height: auto;
+  margin-right: 2rem;
+  border-radius: 8px;
+}
+
+footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
 }
