@@ -1,30 +1,56 @@
-/* Navigation bar styling */
+/* Main content styling */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Profile image inside main */
+main img {
+    width: 150px;
+    height: auto;
+}
+
+/* Paragraph padding reset */
+p {
+    padding: 0;
+}
+
+/* Aside section styling */
+aside {
+    max-width: 800px;
+    margin: 20px auto;
+    border: 2px solid #333;
+    padding: 15px;
+    background-color: #f0f8ff;
+    color: #000;
+}
+
+/* Image inside aside */
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+/* Footer styling */
+footer {
+    margin-top: 30px;
+    border-top: 2px solid #333;
+    text-align: center;
+    padding-top: 10px;
+}
+
+/* Navigation styling */
 nav {
-  background-color: darkblue;
-  padding: 10px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+    background-color: #e6f2ff; /* light background */
+    padding: 10px; /* spacing inside nav bar */
 }
 
 nav a {
-  color: white;
-  display: block;  /* makes each link appear on its own line */
-  padding: 20px;
-}
-
-/* Heading */
-h1 {
-  color: darkblue;
-}
-
-/* Images */
-img {
-  width: 150px;        /* fixed width, not percentage */
-  height: auto;        /* keeps proportions */
-  border: 1px solid black;
-  padding: 2px;
-  box-shadow: 0 0 30px gray;
-}
-
-/* Paragraphs */
-p {
-  padding: 10px;
+    text-decoration: none;
+    color: #0077cc;
+    font-weight: bold;
 }
