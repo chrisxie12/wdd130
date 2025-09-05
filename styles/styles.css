@@ -1,73 +1,71 @@
-/* General page setup */
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #fff;
-    color: #333;
-}
-
-
+/* Navigation bar */
 nav {
-    background-color: #3b74b3;
-    padding: 15px;
+    background-color: #3b74b3; /* required */
+    padding: 15px;            /* required */
 }
 
 nav a {
-    color: white;
-    margin-right: 20px;
+    color: white;             /* required */
+    padding: 0.5rem;          /* required */
+    display: block;           /* required */
     text-decoration: none;
-    font-size: 14px;
+    font-weight: bold;
+    margin: 0 1rem;
 }
 
-nav a:hover {
-    text-decoration: underline;
-}
-
-/* Page heading */
+/* Heading */
 h1 {
-    color: #3b74b3;
-    font-size: 24px;
-    margin: 20px;
+    text-align: center;       /* required */
+    font-size: 2rem;          /* required */
+    margin-top: 1rem;         /* required */
+    color: #3b74b3;           /* required */
 }
 
-/* Profile section */
-.profile {
-    display: flex;
-    align-items: center;
-    margin: 20px;
+/* Images */
+img {
+    width: 200px;             /* required */
+    height: auto;             /* required */
+    border: 1px solid #ccc;   /* required */
+    padding: 5px;             /* required */
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2); /* required */
 }
 
-.profile img {
-    width: 120px;
-    height: auto;
-    border-radius: 6px;
-    margin-right: 15px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+/* Main content */
+main {
+    max-width: 900px;         /* required */
+    margin: 0 auto;
+    padding: 1rem;
 }
 
-.profile p {
-    max-width: 600px;
-    font-size: 15px;
+/* Aside section */
+aside {
+    width: 300px;             /* required */
+    margin: 20px auto;        /* required */
+    border: 1px solid #ccc;   /* required */
+    padding: 15px;            /* required */
+    background-color: #f4f4f4;/* required */
+    color: #333;              /* required */
+}
+
+aside img {
+    width: 200px;             /* required */
+    height: auto;             /* required */
+    display: block;
+    margin: 0 auto;
+}
+
+/* Paragraphs */
+p {
+    padding: 0;               /* required */
     line-height: 1.5;
 }
 
-/* Country section */
-.country {
-    margin: 20px;
-    padding: 15px;
-    border: 1px solid #ccc;
-    max-width: 300px;
-    text-align: center;
-    border-radius: 5px;
-}
-
-.country h2 {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.country img {
-    width: 100%;
-    border-radius: 5px;
+/* Footer */
+footer {
+    background-color: #003366; /* required */
+    color: white;              /* required */
+    text-align: center;        /* required */
+    padding: 1rem;             /* required */
+    margin-top: 2rem;          /* required */
+    border-top: 4px solid #3b74b3; /* required */
 }
