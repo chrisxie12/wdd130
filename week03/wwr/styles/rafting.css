@@ -1,0 +1,154 @@
+/* ========= Test Rule (to check if CSS is loading) ========= */
+body {
+  background-color: lightgray; /* TEMP: should turn page background gray */
+}
+
+/* ========= Root Variables ========= */
+:root {
+  --primary-color: #055a05;      /* forest green */
+  --secondary-color: #f4a261;    /* warm sand */
+  --accent1-color: #264653;      /* dark slate blue */
+  --accent2-color: #e9c46a;      /* golden yellow */
+
+  --heading-font: "Times New Roman", Georgia, serif;
+  --body-font: Arial, Helvetica, sans-serif;
+}
+
+/* ========= Reset ========= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ========= Body ========= */
+body {
+  font-family: var(--body-font);
+  color: var(--accent1-color);
+  line-height: 1.6;
+}
+
+/* ========= Layout Width ========= */
+header, main, footer {
+  width: 840px;
+  margin: 0 auto;
+}
+
+/* ========= Headings ========= */
+h1, h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+}
+
+/* ========= Header ========= */
+header {
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+}
+
+header .logo {
+  width: 100px;
+  height: auto;
+  border-radius: 8px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: var(--accent2-color);
+  font-weight: bold;
+}
+
+/* ========= Hero ========= */
+.hero {
+  position: relative;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Heading overlay */
+.hero h1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(38, 70, 83, 0.8);
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Article overlay */
+.hero article {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  right: 30px;
+  background-color: var(--secondary-color);
+  color: #000;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+/* Image inside article */
+.hero article img {
+  float: right;
+  width: 120px;
+  margin-left: 15px;
+  border-radius: 4px;
+}
+
+/* ========= Sections ========= */
+section {
+  background-color: var(--secondary-color);
+  border-radius: 6px;
+  margin: 16px;
+  padding: 8px;
+}
+
+section::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* ========= Footer ========= */
+footer {
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
+  text-align: center;
+  padding: 16px;
+  margin-top: 20px;
+  border-radius: 6px;
+}
+
+.socialmedia {
+  margin-top: 12px;
+}
+
+.socialmedia a {
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.socialmedia img {
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
+}
