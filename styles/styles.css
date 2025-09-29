@@ -1,0 +1,71 @@
+/* Navigation bar */
+nav {
+    background-color: #3b74b3; /* required */
+    padding: 15px;            /* required */
+}
+
+nav a {
+    color: white;             /* required */
+    padding: 0.5rem;          /* required */
+    display: block;           /* required */
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 1rem;
+}
+
+/* Heading */
+h1 {
+    text-align: center;       /* required */
+    font-size: 2rem;          /* required */
+    margin-top: 1rem;         /* required */
+    color: #3b74b3;           /* required */
+}
+
+/* Images */
+img {
+    width: 200px;             /* required */
+    height: auto;             /* required */
+    border: 1px solid #ccc;   /* required */
+    padding: 5px;             /* required */
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2); /* required */
+}
+
+/* Main content */
+main {
+    max-width: 900px;         /* required */
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Aside section */
+aside {
+    width: 300px;             /* required */
+    margin: 20px auto;        /* required */
+    border: 1px solid #ccc;   /* required */
+    padding: 15px;            /* required */
+    background-color: #f4f4f4;/* required */
+    color: #333;              /* required */
+}
+
+aside img {
+    width: 200px;             /* required */
+    height: auto;             /* required */
+    display: block;
+    margin: 0 auto;
+}
+
+/* Paragraphs */
+p {
+    padding: 0;               /* required */
+    line-height: 1.5;
+}
+
+/* Footer */
+footer {
+    background-color: #003366; /* required */
+    color: white;              /* required */
+    text-align: center;        /* required */
+    padding: 1rem;             /* required */
+    margin-top: 2rem;          /* required */
+    border-top: 4px solid #3b74b3; /* required */
+}
