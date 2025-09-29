@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description"
-        content="Learn more about our rafting company, our history, and the adventures that await you on the river.">
+        content="Discover Explore Africa's history, mission, and exciting rafting adventures across Africa. Experience teamwork, nature, and unforgettable journeys.">
     <meta name="author" content="Christian Twum Gyan">
     <title>About Us - Explore Africa</title>
 
@@ -18,14 +18,14 @@
     <header>
         <!-- Logo links back to rafting home -->
         <a href="index.html">
-            <img src="images/explore africa logo.jpg" alt="White Water Rafting Logo" class="logo">
+            <img src="images/explore-africa-logo.jpg" alt="Explore Africa Logo" class="logo">
         </a>
 
         <!-- Navigation -->
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html" class="active">About Us</a></li>
+                <li><a href="about.html" aria-current="page">About Us</a></li>
                 <li><a href="trips.html">Trips</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
                 <li><a href="../../index.html">Main Site</a></li>
@@ -45,7 +45,7 @@
                     foster teamwork, and deliver unforgettable moments on the river through
                     our white water rafting adventures. Whether you're a seasoned rafter or a first-timer.
                 </p>
-                <img src="images/small.jpg" alt="Happy rafting client" class="article-img">
+                <img src="images/small.jpg" alt="Happy rafting client" class="article-img" loading="lazy">
             </article>
         </div>
 
@@ -58,7 +58,7 @@
                     Over time, we grew from one raft and a bucket of paddles to a fleet of adventures
                     that span multiple rivers and terrains.
                 </p>
-                <img src="images/rafting history.jpg" alt="Rafting history">
+                <img src="images/rafting-history.jpg" alt="Rafting history" loading="lazy">
                 <p>
                     Our experienced guides are passionate about safety and creating memories that last a lifetime.
                     Today, we’re proud to be one of Africa’s most trusted rafting companies.
@@ -71,23 +71,23 @@
             <h2>Adventure Awaits You!</h2>
             <div class="adventure-gallery">
                 <figure>
-                    <img src="images/los Dientel.jpg" alt="Los Dientes del Diablo">
+                    <img src="images/los-dientel.jpg" alt="Los Dientes del Diablo" loading="lazy">
                     <figcaption>Los Dientes del Diablo</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/big mallad.jpg" alt="Big Mallard">
+                    <img src="images/big-mallard.jpg" alt="Big Mallard" loading="lazy">
                     <figcaption>Big Mallard</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/Half Day rafting.jpg" alt="Half Day Adventure">
+                    <img src="images/half-day-rafting.jpg" alt="Half Day Adventure" loading="lazy">
                     <figcaption>Half Day Adventure</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/Rapid rafting.jpg" alt="Rapid Rush">
+                    <img src="images/rapid-rafting.jpg" alt="Rapid Rush" loading="lazy">
                     <figcaption>Rapid Rush</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/sunset rafting.jpg" alt="Sunset Rafting">
+                    <img src="images/sunset-rafting.jpg" alt="Sunset Rafting" loading="lazy">
                     <figcaption>Sunset Rafting</figcaption>
                 </figure>
             </div>
@@ -95,19 +95,24 @@
     </main>
 
     <footer>
-        <p>&copy; 2025 White Water Rafting Adventures | Christian Twum Gyan</p>
+        <p>&copy; <span id="year"></span> White Water Rafting Adventures | Christian Twum Gyan</p>
         <nav class="socialmedia">
-            <a href="https://facebook.com">
-                <img src="images/facebook icon.png" alt="Facebook Icon">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                <img src="images/facebook-icon.png" alt="Facebook">
             </a>
-            <a href="https://linkedin.com">
-                <img src="images/LinkedIn icon.png" alt="LinkedIn Icon">
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                <img src="images/linkedin-icon.png" alt="LinkedIn">
             </a>
-            <a href="https://instagram.com">
-                <img src="images/instagram icon.png" alt="Instagram Icon">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                <img src="images/instagram-icon.png" alt="Instagram">
             </a>
         </nav>
     </footer>
+
+    <script>
+        // Auto-update footer year
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
 </body>
 
 </html>
