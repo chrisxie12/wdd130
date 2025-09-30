@@ -18,7 +18,7 @@
     <!-- HEADER -->
     <header>
         <a href="index.html">
-            <img src="images/explore-africa.jpg.jpg" alt="Explore Africa Logo" class="logo">
+            <img src="images/explore-africa-logo.jpg" alt="Explore Africa Logo" class="logo">
         </a>
 
         <nav>
@@ -27,7 +27,7 @@
                 <li><a href="about.html" class="active">About Us</a></li>
                 <li><a href="trips.html">Trips</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
-                <li><a href="index.html">Main Site</a></li>
+                <li><a href="../../index.html">Main Site</a></li>
             </ul>
         </nav>
     </header>
@@ -75,8 +75,7 @@
                     <figcaption>Los Dientes del Diablo</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/big-mallad.jpg"
-                        alt="Group of rafters navigating a rapid in a blue inflatable raft surrounded by rocky cliffs and rushing white water, set in a forested canyon, conveying excitement and adventure">
+                    <img src="images/big-mallard.jpg" alt="Big Mallard Rapids">
                     <figcaption>Big Mallard</figcaption>
                 </figure>
                 <figure>
@@ -88,7 +87,7 @@
                     <figcaption>Rapid Rush</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/small.jpg" alt="Sunset Rafting">
+                    <img src="images/sunset-rafting.jpg" alt="Sunset Rafting">
                     <figcaption>Sunset Rafting</figcaption>
                 </figure>
             </div>
@@ -97,19 +96,24 @@
 
     <!-- FOOTER -->
     <footer>
-        <p>&copy; 2024 Explore Africa | Christian Twum Gyan</p>
+        <p>&copy; <span id="year"></span> Explore Africa | Christian Twum Gyan</p>
         <div class="social">
             <a href="https://facebook.com">
                 <img src="images/facebook-icon.png" alt="Facebook Icon">
             </a>
             <a href="https://linkedin.com">
-                <img src="images/linkedIn-icon.png" alt="LinkedIn Icon">
+                <img src="images/linkedin-icon.png" alt="LinkedIn Icon">
             </a>
             <a href="https://instagram.com">
                 <img src="images/instagram-icon.png" alt="Instagram Icon">
             </a>
         </div>
     </footer>
+
+    <script>
+        // Auto-update footer year
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
 </body>
 
 </html>
