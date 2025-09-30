@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Get in touch with Explore Africa - White Water Rafting Adventures for bookings and inquiries.">
+        content="Contact Explore Africa - White Water Rafting Adventures for reservations, general inquiries, and suggestions.">
     <meta name="author" content="Christian Twum Gyan">
     <title>Contact Us - Explore Africa</title>
     <link rel="stylesheet" href="styles/rafting.css">
@@ -13,12 +13,9 @@
 
 <body>
     <header>
-        <!-- Logo links back to rafting home -->
         <a href="index.html">
-            <img src="images/explore africa logo.jpg" alt="White Water Rafting Logo" class="logo">
+            <img src="images/explore-africa.jpg.jpg" alt="Explore Africa Logo" class="logo">
         </a>
-
-        <!-- Navigation -->
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -33,39 +30,69 @@
     <main>
         <!-- Hero -->
         <div class="hero">
-            <img src="images/contact.jpg" alt="Contact Us" class="hero-img">
+            <img src="images/contact.jpg" alt="Rafting Contact Us" class="hero-img">
             <h1>Contact Us</h1>
         </div>
 
-        <!-- Contact Info -->
-        <section>
+        <!-- Company Info -->
+        <section class="contact-info">
             <h2>Our Office</h2>
             <p>123 Riverbank Road, Kumasi, Ghana</p>
             <p>Phone: +233 24 123 4567</p>
             <p>Email: info@exploreafrica.com</p>
         </section>
 
-        <!-- Map -->
-        <section>
+        <!-- Google Map -->
+        <section class="map">
             <h2>Find Us</h2>
             <iframe src="https://www.google.com/maps/embed?...your-location..." width="100%" height="300"
-                style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                allowfullscreen="" loading="lazy"></iframe>
+        </section>
+
+        <!-- Employee Profiles -->
+        <section class="employees">
+            <h2>Meet Our Team</h2>
+            <div class="employee-gallery">
+                <figure>
+                    <img src="images/employee1.jpg" alt="John Doe - Tour Guide">
+                    <figcaption>John Doe - Senior Tour Guide</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee2.jpg" alt="Sarah Johnson - Customer Support">
+                    <figcaption>Sarah Johnson - Customer Support</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee3.jpg" alt="Kwame Mensah - Operations Manager">
+                    <figcaption>Kwame Mensah - Operations Manager</figcaption>
+                </figure>
+            </div>
         </section>
 
         <!-- Contact Form -->
-        <section>
+        <section class="contact-form">
             <h2>Send Us a Message</h2>
             <form action="#" method="post">
                 <label for="fullname">Full Name:</label>
                 <input type="text" id="fullname" name="fullname" required>
 
-                <label for="email">Email:</label>
+                <label for="email">Email Address:</label>
                 <input type="email" id="email" name="email" required>
+
+                <fieldset>
+                    <legend>Purpose of Message:</legend>
+                    <label><input type="radio" name="purpose" value="general" required> General Inquiry</label>
+                    <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
+                    <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
+                </fieldset>
 
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" rows="5" required></textarea>
 
-                <button type="submit">Submit</button>
+                <label>
+                    <input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter
+                </label>
+
+                <button type="submit">Send Message</button>
             </form>
         </section>
     </main>
