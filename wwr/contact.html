@@ -25,7 +25,7 @@
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="trips.html">Trips</a></li>
                 <li><a href="contact.html" class="active">Contact Us</a></li>
-                <li><a href="../index.html">Main Site</a></li>
+                <li><a href="../../index.html">Main Site</a></li>
             </ul>
         </nav>
     </header>
@@ -49,9 +49,8 @@
             <!-- Map -->
             <div class="map">
                 <h2>Find Us</h2>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.553925882252!2d-1.623058825142236!3d6.690072121032978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdb94f8d5dcb6cf%3A0x2b3d1e6403d2c4c2!2sKumasi%2C%20Ghana!5e0!3m2!1sen!2sgh!4v1696238900000"
-                    allowfullscreen loading="lazy"></iframe>
+                <iframe src="https://www.google.com/maps/embed?...your-location..." allowfullscreen=""
+                    loading="lazy"></iframe>
             </div>
 
             <!-- Contact Form -->
@@ -66,17 +65,29 @@
 
                     <fieldset>
                         <legend>Message Purpose:</legend>
-                        <label><input type="radio" name="purpose" value="inquiry" required> General Inquiry</label><br>
-                        <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label><br>
-                        <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
+                        <label for="inquiry">
+                            <input type="radio" id="inquiry" name="purpose" value="inquiry" required>
+                            General Inquiry
+                        </label><br>
+
+                        <label for="reservation">
+                            <input type="radio" id="reservation" name="purpose" value="reservation">
+                            Reservation Question
+                        </label><br>
+
+                        <label for="suggestion">
+                            <input type="radio" id="suggestion" name="purpose" value="suggestion">
+                            Website Suggestion
+                        </label>
                     </fieldset>
 
                     <label for="message">Message:</label>
                     <textarea id="message" name="message" rows="5" placeholder="Type your message here..."
                         required></textarea>
 
-                    <label>
-                        <input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter
+                    <label for="subscribe">
+                        <input type="checkbox" id="subscribe" name="subscribe">
+                        Please subscribe me to the monthly newsletter
                     </label>
 
                     <button type="submit">Get in Touch!</button>
@@ -107,15 +118,9 @@
     <footer>
         <p>&copy; 2025 White Water Rafting Adventures | Christian Twum Gyan</p>
         <nav class="social">
-            <a href="https://facebook.com" aria-label="Facebook">
-                <img src="images/facebook-icon.png" alt="Facebook Icon">
-            </a>
-            <a href="https://linkedin.com" aria-label="LinkedIn">
-                <img src="images/linkedin-icon.png" alt="LinkedIn Icon">
-            </a>
-            <a href="https://instagram.com" aria-label="Instagram">
-                <img src="images/instagram-icon.png" alt="Instagram Icon">
-            </a>
+            <a href="https://facebook.com"><img src="images/facebook-icon.png" alt="Facebook Icon"></a>
+            <a href="https://linkedin.com"><img src="images/linkedin-icon.png" alt="LinkedIn Icon"></a>
+            <a href="https://instagram.com"><img src="images/instagram-icon.png" alt="Instagram Icon"></a>
         </nav>
     </footer>
 </body>
