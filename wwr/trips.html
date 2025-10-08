@@ -7,76 +7,129 @@
     <meta name="description"
         content="Explore our thrilling rafting trips and adventures across Africa’s most exciting rivers.">
     <meta name="author" content="Christian Twum Gyan">
-    <title>Trips - Explore Africa</title>
+    <title>Trips - Explore Africa Rafting</title>
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
+    <!-- Header -->
     <header>
-        <!-- Logo links back to rafting home -->
         <a href="index.html">
-            <img src="images/explore africa logo.jpg" alt="White Water Rafting Logo" class="logo">
+            <img src="images/logo.jpg" alt="Explore Africa Logo" class="logo">
         </a>
-
-        <!-- Navigation -->
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="trips.html" class="active">Trips</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
-                <li><a href="../../index.html">Main Site</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <!-- Hero -->
-        <div class="hero">
-            <img src="images/trip.png" alt="Rafting Trips" class="hero-img">
-            <h1>Our Trips</h1>
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: url('images/hero-bg.jpg');">
+        <div class="hero-content">
+            <h1>Our Rafting Trips</h1>
+            <p>Choose your adventure and experience Africa’s most thrilling rivers!</p>
         </div>
+    </section>
 
-        <!-- Trip Options -->
-        <section>
-            <h2>Choose Your Adventure</h2>
-            <div class="trips-container">
-                <article class="trip-card">
-                    <img src="images/beginner trip.jpg" alt="Beginner Trip">
-                    <h3>Beginner Rapids</h3>
-                    <p>Perfect for families and first-timers. A fun 2-hour adventure with gentle rapids.</p>
-                </article>
+    <main>
+        <!-- Trip Descriptions -->
+        <section class="adventures">
+            <h2>Featured Trips</h2>
+            <div class="adventure-gallery">
 
-                <article class="trip-card">
-                    <img src="images/intermediate trip.jpg" alt="Intermediate Trip">
-                    <h3>Intermediate Adventure</h3>
-                    <p>4-hour rafting with more exciting rapids. Great for adventure seekers.</p>
-                </article>
+                <figure>
+                    <img src="images/beginner-trip.jpg" alt="Beginner Rapids">
+                    <figcaption>
+                        <strong>Beginner Rapids</strong>
+                        <p>Perfect for families and first-timers. Enjoy a fun 2-hour adventure with gentle rapids.</p>
+                    </figcaption>
+                </figure>
 
-                <article class="trip-card">
-                    <img src="images/extreme trip.jpg" alt="Extreme Trip">
-                    <h3>Extreme Whitewater</h3>
-                    <p>A full-day trip for thrill-seekers! Navigate Africa’s most challenging rivers.</p>
-                </article>
+                <figure>
+                    <img src="images/intermediate-trip.jpg" alt="Intermediate Adventure">
+                    <figcaption>
+                        <strong>Intermediate Adventure</strong>
+                        <p>4-hour rafting with more exciting rapids. Ideal for adventure seekers wanting a challenge.
+                        </p>
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/extreme-trip.jpg" alt="Extreme Whitewater">
+                    <figcaption>
+                        <strong>Extreme Whitewater</strong>
+                        <p>A full-day rafting trip for thrill-seekers. Navigate Africa’s most challenging rivers safely
+                            with certified guides.</p>
+                    </figcaption>
+                </figure>
+
             </div>
         </section>
 
+        <!-- Trips Table -->
+        <section class="trips-table-section">
+            <h2>Available Trips Overview</h2>
+            <table class="trips-table">
+                <thead>
+                    <tr>
+                        <th>Trip Name</th>
+                        <th>Duration</th>
+                        <th>Difficulty</th>
+                        <th>Price</th>
+                        <th>Age Requirement</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Beginner Rapids</td>
+                        <td>2 hours</td>
+                        <td>Easy</td>
+                        <td>$50</td>
+                        <td>All ages</td>
+                    </tr>
+                    <tr>
+                        <td>Intermediate Adventure</td>
+                        <td>4 hours</td>
+                        <td>Medium</td>
+                        <td>$80</td>
+                        <td>12+</td>
+                    </tr>
+                    <tr>
+                        <td>Extreme Whitewater</td>
+                        <td>Full day</td>
+                        <td>Hard</td>
+                        <td>$150</td>
+                        <td>16+</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
         <!-- Call to Action -->
-        <section>
+        <section class="newsletter">
             <h2>Ready to Book?</h2>
-            <p>Contact us today and secure your spot!</p>
-            <a href="contact.html">Book Now</a>
+            <p>Contact us today and secure your spot on one of our exciting rafting trips!</p>
+            <a href="contact.html" class="cta-button">Contact Us</a>
         </section>
     </main>
 
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 White Water Rafting Adventures | Christian Twum Gyan</p>
-        <nav class="socialmedia">
-            <a href="https://facebook.com"><img src="images/facebook icon.png" alt="Facebook Icon"></a>
-            <a href="https://linkedin.com"><img src="images/LinkedIn icon.png" alt="LinkedIn Icon"></a>
-            <a href="https://instagram.com"><img src="images/instagram icon.png" alt="Instagram Icon"></a>
-        </nav>
+        <p>&copy; <span id="year"></span> Explore Africa | Christian Twum Gyan</p>
+        <div class="social">
+            <a href="https://facebook.com" target="_blank"><img src="images/facebookicon.png" alt="Facebook"></a>
+            <a href="https://linkedin.com" target="_blank"><img src="images/linkedinicon.png" alt="LinkedIn"></a>
+            <a href="https://instagram.com" target="_blank"><img src="images/instagram-icon.png" alt="Instagram"></a>
+        </div>
     </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 
 </html>

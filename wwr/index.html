@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Have an adventure with Explore Africa. Make memories rafting across Africa’s beautiful rivers.">
+    <meta name="author" content="Christian Twum Gyan">
+    <title>Explore Africa - Home</title>
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <img src="images/logo.jpg" alt="Explore Africa Logo" class="logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" style="background-image: url('images/hero-bg.jpg');">
+        <div class="hero-content">
+            <h1>Have An Adventure</h1>
+            <p>Make Memories with Explore Africa</p>
+            <a href="trips.html" class="cta-button">Book Now</a>
+        </div>
+    </section>
+
+    <main>
+        <section class="adventures">
+            <h2>Explore Our Adventures</h2>
+            <div class="adventure-gallery">
+                <figure>
+                    <img src="images/beautiful-river.jpg" alt="Beautiful River">
+                    <figcaption>Rivers</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/camping.jpg" alt="Camping in Nature">
+                    <figcaption>Camping</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/rapid.jpg" alt="Rafting Rapids">
+                    <figcaption>Rapids</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="thrill-section">
+            <div class="thrill-container">
+                <img src="images/rafting-group.jpg" alt="Rafting Team Adventure">
+                <div class="thrill-text">
+                    <h2>Feel the Thrill of the Rapids</h2>
+                    <p>Join us for a white-water experience like no other! Our certified guides ensure your safety while
+                        guaranteeing maximum fun. Suitable for beginners and thrill-seekers alike.</p>
+                    <a href="trips.html" class="join-btn">Discover Trips</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <h2>Join Our Adventure Newsletter</h2>
+            <p>Stay updated on our latest rafting trips, deals, and outdoor experiences.</p>
+            <form>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Explore Africa | Christian Twum Gyan</p>
+        <div class="social">
+            <a href="https://facebook.com"><img src="images/facebookicon.png" alt="Facebook"></a>
+            <a href="https://linkedin.com"><img src="images/linkedinicon.png" alt="LinkedIn"></a>
+            <a href="https://instagram.com"><img src="images/instagram-icon.png" alt="Instagram"></a>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>

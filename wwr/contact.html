@@ -12,31 +12,31 @@
 </head>
 
 <body>
+    <!-- HEADER -->
     <header>
-        <!-- Logo links back to rafting home -->
         <a href="index.html">
-            <img src="images/exploreafrica..jpg" alt="Explore Africa Logo" class="logo">
+            <img src="images/logo.jpg" alt="Explore Africa Logo" class="logo">
         </a>
-
-        <!-- Navigation -->
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="trips.html">Trips</a></li>
                 <li><a href="contact.html" class="active">Contact Us</a></li>
-                <li><a href="../../index.html">Main Site</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <!-- Hero -->
-        <div class="hero">
-            <h1>Explore Africa</h1>
-        </div>
+        <!-- HERO SECTION -->
+        <section class="hero" style="background-image: url('images/client.jpg');">
+            <div class="hero-content">
+                <h1>Get in Touch with Us</h1>
+                <p>We’re ready to help you plan your next rafting adventure!</p>
+            </div>
+        </section>
 
-        <!-- Company Information -->
+        <!-- COMPANY INFO -->
         <section class="company-info">
             <h2>Our Office</h2>
             <p>123 Riverbank Road, Kumasi, Ghana</p>
@@ -44,7 +44,7 @@
             <p>Email: <a href="mailto:info@exploreafrica.com">info@exploreafrica.com</a></p>
         </section>
 
-        <!-- Map + Form Grid -->
+        <!-- CONTACT GRID -->
         <section class="contact-grid">
             <!-- Map -->
             <div class="map">
@@ -65,39 +65,25 @@
 
                     <fieldset>
                         <legend>Message Purpose:</legend>
-                        <label for="inquiry">
-                            <input type="radio" id="inquiry" name="purpose" value="inquiry" required>
-                            General Inquiry
-                        </label><br>
-
-                        <label for="reservation">
-                            <input type="radio" id="reservation" name="purpose" value="reservation">
-                            Reservation Question
-                        </label><br>
-
-                        <label for="suggestion">
-                            <input type="radio" id="suggestion" name="purpose" value="suggestion">
-                            Website Suggestion
-                        </label>
+                        <label><input type="radio" name="purpose" value="inquiry" required> General Inquiry</label><br>
+                        <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label><br>
+                        <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
                     </fieldset>
 
                     <label for="message">Message:</label>
                     <textarea id="message" name="message" rows="5" placeholder="Type your message here..."
                         required></textarea>
 
-                    <label for="subscribe">
-                        <input type="checkbox" id="subscribe" name="subscribe">
-                        Please subscribe me to the monthly newsletter
-                    </label>
+                    <label><input type="checkbox" name="subscribe"> Subscribe to monthly newsletter</label>
 
-                    <button type="submit">Get in Touch!</button>
+                    <button type="submit" class="cta-button">Get in Touch!</button>
                 </form>
             </div>
         </section>
 
-        <!-- Employees Section -->
+        <!-- EMPLOYEES SECTION -->
         <section class="employees">
-            <h2>We Are Here to Serve You</h2>
+            <h2>Meet Our Team</h2>
             <div class="employee-gallery">
                 <figure>
                     <img src="images/man1.jpg" alt="John Mensah - Tour Guide">
@@ -115,14 +101,19 @@
         </section>
     </main>
 
+    <!-- FOOTER -->
     <footer>
-        <p>&copy; 2025 White Water Rafting Adventures | Christian Twum Gyan</p>
-        <nav class="social">
-            <a href="https://facebook.com"><img src="images/facebookicon.png" alt="Facebook Icon"></a>
-            <a href="https://linkedin.com"><img src="images/linkedinicon.png" alt="LinkedIn Icon"></a>
-            <a href="https://instagram.com"><img src="images/instagram-icon.png" alt="Instagram Icon"></a>
-        </nav>
+        <p>&copy; <span id="year"></span> Explore Africa | Christian Twum Gyan</p>
+        <div class="social">
+            <a href="https://facebook.com"><img src="images/facebookicon.png" alt="Facebook"></a>
+            <a href="https://linkedin.com"><img src="images/linkedinicon.png" alt="LinkedIn"></a>
+            <a href="https://instagram.com"><img src="images/instagram-icon.png" alt="Instagram"></a>
+        </div>
     </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 
 </html>
